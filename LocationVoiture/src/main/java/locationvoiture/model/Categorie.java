@@ -33,6 +33,53 @@ public class Categorie {
 		
 	
 		Categorie() {}
+
+
+		public Categorie(Long id, String nomCategorie) {
+			super();
+			this.id = id;
+			this.nomCategorie = nomCategorie;
+		}
+
+
+		public Long getId() {
+			return id;
+		}
+
+
+		public void setId(Long id) {
+			this.id = id;
+		}
+
+
+		public String getNomCategorie() {
+			return nomCategorie;
+		}
+
+
+		public void setNomCategorie(String nomCategorie) {
+			this.nomCategorie = nomCategorie;
+		}
+
+
+		public Set<Voiture> getVoitures() {
+			return voitures;
+		}
+
+
+		public void setVoitures(Set<Voiture> voitures) {
+			this.voitures = voitures;
+		}
+
+
+		public Gamme getGamme() {
+			return gamme;
+		}
+
+
+		public void setGamme(Gamme gamme) {
+			this.gamme = gamme;
+		}
 		
 		
 }

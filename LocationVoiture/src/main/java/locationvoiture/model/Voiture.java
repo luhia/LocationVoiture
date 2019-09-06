@@ -40,7 +40,100 @@ public class Voiture {
 
 		
 		public Voiture() {}
-		
+
+
+		public Voiture(long id, String immatriculation, String marque, String photo, LocalDate dateachat) {
+			super();
+			this.id = id;
+			this.immatriculation = immatriculation;
+			this.marque = marque;
+			this.photo = photo;
+			this.dateachat = dateachat;
+		}
+
+
+		public long getId() {
+			return id;
+		}
+
+
+		public void setId(long id) {
+			this.id = id;
+		}
+
+
+		public String getImmatriculation() {
+			return immatriculation;
+		}
+
+
+		public void setImmatriculation(String immatriculation) {
+			this.immatriculation = immatriculation;
+		}
+
+
+		public String getMarque() {
+			return marque;
+		}
+
+
+		public void setMarque(String marque) {
+			this.marque = marque;
+		}
+
+
+		public String getPhoto() {
+			return photo;
+		}
+
+
+		public void setPhoto(String photo) {
+			this.photo = photo;
+		}
+
+
+		public LocalDate getDateachat() {
+			return dateachat;
+		}
+
+
+		public void setDateachat(LocalDate dateachat) {
+			this.dateachat = dateachat;
+		}
+
+
+		public Categorie getCategorie() {
+			return categorie;
+		}
+
+
+		public void setCategorie(Categorie categorie) {
+			this.categorie = categorie;
+		}
+
+
+		public Carburant getCarburant() {
+			return carburant;
+		}
+
+
+		public void setCarburant(Carburant carburant) {
+			this.carburant = carburant;
+		}
+
+
+		public Set<Location> getLocations() {
+			return locations;
+		}
+
+
+		public void setLocations(Set<Location> locations) {
+			this.locations = locations;
+		}
+
+
+
+
 		
 		
 		

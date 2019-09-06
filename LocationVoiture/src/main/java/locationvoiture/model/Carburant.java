@@ -27,6 +27,43 @@ public class Carburant {
 		
 		
 		public Carburant() {}
+
+
+		public Carburant(Long id, String nomCarburant) {
+			super();
+			this.id = id;
+			this.nomCarburant = nomCarburant;
+		}
+
+
+		public Long getId() {
+			return id;
+		}
+
+
+		public void setId(Long id) {
+			this.id = id;
+		}
+
+
+		public String getNomCarburant() {
+			return nomCarburant;
+		}
+
+
+		public void setNomCarburant(String nomCarburant) {
+			this.nomCarburant = nomCarburant;
+		}
+
+
+		public Set<Carburant> getCarburants() {
+			return carburants;
+		}
+
+
+		public void setCarburants(Set<Carburant> carburants) {
+			this.carburants = carburants;
+		}
 		
 		
 }

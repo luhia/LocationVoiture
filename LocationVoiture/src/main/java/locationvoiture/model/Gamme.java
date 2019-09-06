@@ -27,6 +27,43 @@ public class Gamme {
 
 		
 		public Gamme() {}
+
+
+		public Gamme(Long id, String nomGamme) {
+			super();
+			this.id = id;
+			this.nomGamme = nomGamme;
+		}
+
+
+		public Long getId() {
+			return id;
+		}
+
+
+		public void setId(Long id) {
+			this.id = id;
+		}
+
+
+		public String getNomGamme() {
+			return nomGamme;
+		}
+
+
+		public void setNomGamme(String nomGamme) {
+			this.nomGamme = nomGamme;
+		}
+
+
+		public Set<Gamme> getGammes() {
+			return gammes;
+		}
+
+
+		public void setGammes(Set<Gamme> gammes) {
+			this.gammes = gammes;
+		}
 		
 		
 		
