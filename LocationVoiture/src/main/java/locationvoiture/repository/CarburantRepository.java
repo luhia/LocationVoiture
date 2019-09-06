@@ -1,5 +1,9 @@
 package locationvoiture.repository;
 
-public interface CarburantRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import locationvoiture.model.Carburant;
+
+public interface CarburantRepository extends JpaRepository<Carburant, Long>{
 
 }
