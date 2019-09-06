@@ -24,7 +24,7 @@ public class CarburantServiceImp implements CarburantService{
 		}
 	
 		@Override
-		public Carburant deleteByid(Long id) {
+		public Carburant deleteById(Long id) {
 			Carburant temp = findById(id);
 			carburantRepository.deleteById(id);
 			return temp;

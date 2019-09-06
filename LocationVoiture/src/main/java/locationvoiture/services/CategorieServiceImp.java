@@ -24,7 +24,7 @@ public class CategorieServiceImp implements CategorieService{
 		}
 	
 		@Override
-		public Categorie deleteByid(Long id) {
+		public Categorie deleteById(Long id) {
 			Categorie temp = findById(id);
 			categorieRepository.deleteById(id);
 			return temp;

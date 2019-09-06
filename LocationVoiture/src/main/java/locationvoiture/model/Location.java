@@ -18,11 +18,11 @@ public class Location {
 		public int prix;
 		public int duree;
 		public LocalDate debutlocation;
-	
+		
 		@ManyToOne
 		@JoinColumn(name="voiture")
 		private Voiture voiture;
-
+		
 		
 		public Location() {}
 
