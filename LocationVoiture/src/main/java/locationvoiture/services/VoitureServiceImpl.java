@@ -17,22 +17,25 @@ public class VoitureServiceImpl implements VoitureService{
 
 		@Override
 		public List<Voiture> findAll() {
-			return null;
+			return voitureRepository.findAll();
 		}
 	
 		@Override
 		public Voiture save(Voiture voiture) {
-			return null;
+			return voitureRepository.save(voiture);
 		}
 	
 		@Override
 		public Voiture deleteById(Long id) {
-			return null;
+			Voiture temp = findById(id);
+			voitureRepository.deleteById(id);
+			return temp;
 		}
 	
+		
 		@Override
 		public Voiture findById(Long id) {
-			return null;
+			return voitureRepository.findById(id).get();
 		}
 
 }
